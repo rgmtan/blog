@@ -12,6 +12,9 @@
 */
 
 /*
+ * DB::table('employees')->where('Country' => 'UK')->orderBy('Name')->get();
+ */
+/*
 Route::get('/', function()
 {
     $users = DB::table('employees')->select('FirstName', 'Country')->get();
@@ -26,6 +29,10 @@ Route::get('/', function()
     return View::make('home.index')->with('title', $title);
 });
 
+/*
+ * Using query builder :
+ * DB::table('test')->insert(array('fname' => $fname, 'lname' = $lname));
+ */
 Route::post('/', function()
 {
     $input = Input::all();
