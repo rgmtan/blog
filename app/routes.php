@@ -11,12 +11,15 @@
 |
 */
 
+/*
 Route::get('/', function()
 {
-    $users = DB::table('employees')->get();
+    $users = DB::table('employees')->select('FirstName', 'Country')->get();
+    echo "<pre>";
     var_dump($users);
-});
-/*
+    echo "</pre>";
+}); */
+
 Route::get('/', function()
 {
     $title = "L4 Basics";
@@ -32,4 +35,4 @@ Route::post('/', function()
 Route::get('about', function()
 {
     return "This is about us";
-});*/
+});
