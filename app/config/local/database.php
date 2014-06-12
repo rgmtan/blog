@@ -23,7 +23,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'northwind',
+			'database'  => 'hunter',
 			'username'  => 'root',
 			'password'  => 'pass123456',
 			'charset'   => 'utf8',
